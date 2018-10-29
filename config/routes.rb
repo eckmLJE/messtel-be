@@ -4,6 +4,7 @@ Rails.application.routes.draw do
       resources :addresses
       post 'user_token' => 'user_token#create'
       resources :users
+      get '/user', to: 'users#show_user'
     end
   end
 end
