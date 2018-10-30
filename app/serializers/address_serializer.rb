@@ -1,3 +1,3 @@
 class AddressSerializer < ActiveModel::Serializer
-  attributes :id, :name
+  attributes :id, :name, :mbid
 end

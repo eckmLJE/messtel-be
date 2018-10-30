@@ -11,4 +11,15 @@ class Api::V1::AddressesController < ApplicationController
         render json: @address
     end
 
+    def create
+        @address = Address.create(address_params)
+        render json: @address
+    end
+
+    private
+
+    def address_params
+        params.require(:address).permit(:name, :mbid)
+    end
+
 end
