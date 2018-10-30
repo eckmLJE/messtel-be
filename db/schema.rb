@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 2018_10_29_144157) do
 
   create_table "addresses", force: :cascade do |t|
     t.string "name"
+    t.string "mbid"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

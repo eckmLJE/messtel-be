@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       post 'user_token' => 'user_token#create'
       resources :users
       get '/user', to: 'users#show_user'
+      get '/mbidlookup/:id', to: 'addresses#lookup'
     end
   end
 end
