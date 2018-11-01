@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 2018_11_01_160707) do
     t.integer "address_id"
     t.integer "points"
     t.text "content"
+    t.string "user_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
