@@ -19,7 +19,7 @@ class Api::V1::AddressesController < ApplicationController
     private
 
     def address_params
-        params.require(:address).permit(:name, :mbid)
+        params.require(:address).permit(:name, :mbid, :center)
     end
 
 end
